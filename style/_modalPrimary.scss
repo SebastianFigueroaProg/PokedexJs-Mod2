@@ -1,0 +1,74 @@
+
+.modalPokedex{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .8s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+    .modalConteiner{
+        margin: auto;
+        width: 90%;
+        max-width: 600px;
+        max-block-size: 90%;
+        background-color: #FFBD59;
+        border-radius: 6px;
+        padding: 3em 2.5em;
+        display: grid;
+        gap: 1em;
+        place-items: center;
+        grid-auto-columns: 100%;
+        transform: var(--transform);
+        transition: var(--transition);
+        .subtitle{
+            font-size: 2rem;
+        }
+        .imgModalPokedex{
+            width: 90%;
+            max-width: 300px;
+        }
+        a{
+            text-decoration: none;  
+            color: white;
+            background-color: #34495E;              
+            border-radius: 6px;
+        }
+        .buttomConteiner{
+            display: flex;
+            gap: 1rem;
+            .forType{
+                padding: 6px 70px;
+                &:hover{
+                    background-color: #293949;
+                }
+            }
+            .forNameOID{
+                padding: 6px 40px;
+                &:hover{
+                    background-color: #293949;
+                }
+            }
+        }
+        .closePokedex{
+            padding: 6px 188px;
+            &:hover{
+                background-color: #293949;
+                color: rgb(221, 65, 65);
+            }
+        }
+        
+    }
+}
+.show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .5s;
+}

@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;700&display=swap');
+
+//Importaciones Partials
+@import './cardsPokemon';
+@import './modalPrimary';
+@import './modalSelect';
+@import './modalInput';
+@import './modalType';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #FFBD59;
+    font-family: 'Roboto Slab', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 4rem;
+    position: relative;
+    .boxMedia{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        audio{
+            visibility: hidden;            
+        }
+        .iconSound{
+            position: absolute;
+            font-size: 20px;
+            border: 2px solid black;
+            border-radius: 50%;
+            padding: 2px;
+            right: 5%;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        .imgPoke{
+            margin: auto;
+            width: 20%;        
+        }
+    }    
+    .main{
+        background-color: #737E90;
+        position: relative;
+        width: 100%;
+        min-height: 22rem;
+        margin-top: 1rem;    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem 0;
+        .movePokemon{
+            position: absolute;
+            top: 0px;
+            animation: movePokemon 20s infinite;
+            .move{
+                animation: rotatePokemon 20s infinite;                
+                width: 50px;
+            }
+            .move2{
+                animation: rotatePokemon 20s infinite;                
+                width: 50px;
+            }
+            .move3{
+                animation: rotatePokemon 20s infinite;                
+                width: 50px;
+            }
+        }
+        .contenedor{
+            background-color: white; 
+            width: 85%;
+            min-height: 20rem;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 1rem 2rem;
+            border-radius: 1rem;
+            .circle{
+                position: relative;
+                width: 160px;
+                height: 160px;
+                background-color: #fff;
+                border-radius: 50%;
+                border: 1px solid #000;
+                overflow: hidden;
+                animation: giro 4s infinite;
+                box-shadow: inset 10px -10px 0px 5px rgba(0,0,0,0.2);
+                &::before{
+                    content: '';
+                    width: 320px;
+                    height: 80px;
+                    background-color: red;
+                    position: absolute;
+                    border-radius: 20%;
+                    margin-left: -100px;
+                    border-bottom: 20px solid black;
+                }
+                &::after{
+                    content: '';
+                    width: 30px;
+                    height: 50px;
+                    background-color: white;
+                    position: absolute;
+                    top: calc(5%);
+                    left: calc(65%);
+                    border-radius: 50%;
+                    transform: rotate(-47deg);
+                }
+                .pokeball{
+                    width: 40px;
+                    height: 40px;
+                    background-color: #fff;
+                    position: absolute;
+                    top: calc(50% - 15px);
+                    left: calc(50% - 15px);
+                    border-radius: 50%;
+                    border: 7px solid black;
+                    .addPoke{
+                        width: 25px;
+                        height: 25px;
+                        background-color: white;
+                        position: absolute;
+                        top: calc(20% - 2px);
+                        left: calc(20% - 2px);
+                        border-radius: 50%;
+                        border: 2px solid black;
+                        &:hover{
+                            background-color: rgba(252, 4, 4, 0.4);                                                       
+                        }
+                    }
+                }
+                
+            }
+
+            
+            
+        }
+        
+    }    
+}
+
+@keyframes giro {
+    0%{
+        transform: rotate(-20deg);
+    }
+    50%{
+        transform: rotate(20deg);
+    }
+    100%{
+        transform: rotate(-20deg);
+    }
+}
+@keyframes rotatePokemon {
+    0%{
+        transform: rotate(0deg);
+    }
+    10%{
+        transform: rotate(10deg);
+    }
+    20%{
+        transform: rotate(-10deg);
+    }
+    30%{
+        transform: rotate(10deg);
+    }
+    40%{
+        transform: rotate(-10deg);
+    }
+    50%{
+        transform: rotate(10deg);
+    }
+    60%{
+        transform: rotate(-10deg);
+    }
+    70%{
+        transform: rotate(10deg);
+    }
+    80%{
+        transform: rotate(-10deg);
+    }
+    90%{
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes movePokemon{
+    0%{
+        left: 20%;
+    }
+    50%{
+        left: 72%;
+    }
+    100%{
+        left: 20%;
+    }
+}

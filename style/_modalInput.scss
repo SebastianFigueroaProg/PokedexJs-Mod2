@@ -1,0 +1,50 @@
+
+.dialogName{
+    width: 300px;
+    height: 250px;
+    background-color: #067BAF;
+    margin: auto;
+    position: relative;
+    border-radius: 10px;
+    border: none;
+    .conteinerModalName{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0.7em;
+        .chooseName{
+            color: #FFCB05;
+            text-shadow: 0 0 2px #316AB2;
+            -webkit-text-stroke: 0.8px #316AB2;
+        }
+        input{
+            width: 150px;
+            background-color: #0BBEED;
+            border: 1px solid #316AB2;
+            outline: none;
+            color: white;
+        }
+        .buttonModalName{
+            display: flex;
+            gap: 15px;
+            .searchName, .backName{
+                padding: 0 10px;
+                border: none;
+                border-radius: 15px;
+                background-color: #0BBEED;
+                color: white;
+                filter: drop-shadow(0 0 1px black);
+                &:hover{
+                    filter: drop-shadow(0 0 2px black);
+                    cursor: pointer;
+                }
+            }
+        }        
+        .typeImgName{
+            width: 300px;
+            height: 147px;
+        }
+
+    }    
+}

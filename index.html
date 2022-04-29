@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/gif" href="./img/Pokemon-gifs-9.gif">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Proyecto Js - Pokedex</title>
+</head>
+<body>
+
+    <section class="boxMedia">
+        <img class="imgPoke" src="./img/pokemon-23.svg" alt="">
+        <ion-icon id="iconSound" class="iconSound active" name="volume-mute-outline"></ion-icon>
+        <audio src="./assets/pokemon-intro.mp3" id="audio1" type="audio/mp3" autoplay loop></audio>
+    </section>
+
+    
+    <main class="main">
+        <div class="movePokemon">
+            <img class="move" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/172.png" alt="">
+            <img class="move2" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/39.png" alt="">
+            <img class="move3" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/175.png" alt="">
+        </div>
+        <section class="contenedor">            
+                <div class="circle">
+                    <div class="pokeball">
+                        <a href="#" class="addPoke" id="boton">
+                        </a>                        
+                    </div>
+                </div>           
+                
+        </section>
+    </main>
+
+    <section class="modalPokedex" id="modalPokedex">
+        <article class="modalConteiner">
+            <img class="imgModalPokedex" src="./img/tenor (3).gif" alt="Pokemon Bailando">
+            <h3 class="subtitle">Elije tu opcion, y Capturalos a TODOS!</h3>
+            <div class="buttomConteiner">
+                <a class="forType" href="">Por Tipo</a>
+                <a class="forNameOID" href="#">Por Nombre o ID</a>
+            </div>
+            <a class="closePokedex" id="closePokedex" href="#">Cerrar</a>
+        </article>
+    </section>
+
+    <dialog class="dialogType">
+        <div class="conteinerModalType">
+            <h2 class="chooseType">Elije el TIPO de pokémon que deseas...</h2>
+            <form action="" class="formType">
+                <select name="pokeType" id="pokeType" onKeyPress="if(event.keyCode == 13) event.returnValue = false;">
+                    <option selected disabled>Elige tu Pokemon</option>
+                    <option value="steel">Acero</option>
+                    <option value="water">Agua</option>
+                    <option value="bug">Bicho</option>
+                    <option value="dragon">Dragon</option>
+                    <option value="electric">Electrico</option>
+                    <option value="ghost">Fantasma</option>
+                    <option value="fire">Fuego</option>
+                    <option value="fairy">Hada</option>
+                    <option value="ice">Hielo</option>
+                    <option value="fighting">Lucha</option>
+                    <option value="normal">Normal</option>
+                    <option value="grass">Planta</option>
+                    <option value="psychic">Psiquico</option>
+                    <option value="rock">Roca</option>
+                    <option value="dark">Siniestro</option>
+                    <option value="ground">Tierra</option>
+                    <option value="poison">Veneno</option>
+                    <option value="flying">Volador</option>
+                </select>
+            </form>            
+            <div class="buttonModal">
+                <button class="back">Atrás</button>
+                <button class="search">Buscar</button>
+            </div>        
+            <img class="typeImg" src="./img/tipos Kokemon.png" alt="Icono de Tipos">        
+        </div>        
+    </dialog>
+
+    <dialog class="dialogName">
+        <div class="conteinerModalName">
+            <h2 class="chooseName">Atrapalo a Todos...</h2>
+            <form action="" id="formName" onKeyPress="if(event.keyCode == 13) event.returnValue = false;">
+                <input id="inputName" type="text" placeholder="Nombre o ID del Pokémon">
+            </form>        
+        <div class="buttonModalName">
+            <button id="backName" class="backName">Atrás</button>
+            <button id="searchName" class="searchName">Capturar</button>
+        </div>        
+        <img class="typeImgName" src="./img/atrPokemon2.png" alt="Icono de Tipos">
+        </div>        
+    </dialog>
+
+    <section class="modalType" id="modalType">
+        <article class="modalConteinerType">
+            <div class="topConteiner">
+                <div class="backModalType">
+                    <span class="arrow"></span>
+                    <span class="textArrow">ATRAS</span>
+                </div>
+                <h2 class="textTitle">Atrapalos a Todos...</h2>
+            </div>            
+            <div class="conteinerTypeCard">
+                
+                
+            </div>            
+        </article>
+    </section>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>    
+    <script src="app.js"></script>
+</body>
+</html>

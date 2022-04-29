@@ -1,0 +1,115 @@
+.card{
+    width: 8rem;
+    height: 14rem;
+    margin: 1rem 1.20rem;            
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    transition: 0.5s;
+    img{
+        width: 100px;
+        background-color: rgb(201, 248, 244);
+        margin-top: 1rem;
+        border-radius: 0.6rem;
+    }
+    .name{
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+    .type{
+        background-color: white;
+        color: var(--fire);
+        width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 7px;
+        font-weight: 500;
+    }
+    .remove{
+        color: white;
+        border: none;
+        background-color: transparent;
+        font-weight: 500;
+        font-size: 1.2rem;
+        margin-top: 2px;
+        cursor: pointer;
+        opacity: 0;
+    }
+    &:hover{
+        transform: scale(1.1);
+        box-shadow: 10px 12px 11px -5px rgba(128,128,128,0.75);
+        transition: 0.5s;
+        .remove{
+            opacity: 1;
+            &:hover{
+                color: crimson;
+            }
+        }
+    }
+}
+
+.card2{
+    width: 8rem;
+    height: 14rem;
+    margin: 1rem 1.20rem;              
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    transition: 0.5s;
+    
+    img{
+        width: 100px;
+        background-color: rgb(201, 248, 244);
+        margin-top: 1rem;
+        border-radius: 0.6rem;
+    }
+    .name{
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+    .type{
+        background-color: white;
+        color: var(--fire);
+        width: 90px;
+        display: flex;
+        justify-content: center;        
+        align-items: center;
+        border-radius: 7px;
+        font-weight: 500;
+    }
+    .type2{
+        background-color: white;
+        color: var(--fire);
+        width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 7px;
+        font-weight: 500;
+    }
+    .remove{
+        color: white;
+        border: none;
+        background-color: transparent;
+        font-weight: 500;
+        font-size: 1.2rem;
+        cursor: pointer;
+        opacity: 0;
+    }
+    &:hover{
+        transform: scale(1.1);
+        box-shadow: 10px 12px 11px -5px rgba(128,128,128,0.75);
+        transition: 0.5s;
+        .remove{
+            opacity: 1;
+            &:hover{
+                color: crimson;
+            }
+        }
+    }
+}

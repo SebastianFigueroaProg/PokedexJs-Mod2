@@ -1,0 +1,47 @@
+
+.dialogType{
+    width: 300px;
+    height: 250px;
+    background-color: #8B81E0;
+    margin: auto;
+    position: relative;
+    border-radius: 10px;
+    border: none;
+    .conteinerModalType{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0.3em;
+        .chooseType{
+            color: #FFCB05;
+            text-shadow: 0 0 2px #316AB2;
+            -webkit-text-stroke: 0.8px #316AB2;
+        }
+        select{
+            background-color: #A4A0EB;
+            border: 1px solid #316AB2;
+            color: white;
+        }
+        .buttonModal{
+            display: flex;
+            gap: 15px;
+            .search, .back{
+                padding: 0 10px;
+                border: none;
+                border-radius: 15px;
+                background-color: #A4A0EB;
+                color: white;
+                filter: drop-shadow(0 0 1px black);
+                &:hover{
+                    filter: drop-shadow(0 0 2px black);
+                    cursor: pointer;
+                }
+            }
+        }        
+        .typeImg{
+            width: 300px;
+            height: 135px;
+        }
+    }    
+}
