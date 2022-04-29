@@ -111,6 +111,7 @@ search.addEventListener('click',(e)=>{
         //Obtener pokemones del tipo seleccionado para crear card
         obtenertypesPokemon(typePokSelect);
         modalType.classList.add('show');
+        conteinerTypePokemon.innerHTML = '';
     }
 
     dialog.close();
